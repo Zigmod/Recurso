@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true, // Puedes ajustar esto a true o false según lo que necesites
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true, // Añadido de la configuración original
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve", // Usar "react-jsx" en lugar de "preserve"
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.js", // Añadido para incluir archivos JS
+    "**/*.jsx", // Añadido para incluir archivos JSX
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/shared/testConnection.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
